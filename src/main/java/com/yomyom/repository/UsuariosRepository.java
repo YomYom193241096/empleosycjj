@@ -7,7 +7,7 @@ import com.yomyom.model.Usuario;
 
 public interface UsuariosRepository extends JpaRepository<Usuario, Integer> {
 	
-	@Query(value = "select count(*) from usuarios",
+	@Query(value = "select count(*) from Usuarios",
 			nativeQuery = true)
 	Integer totalEntidades();
 	
